@@ -5,11 +5,10 @@ jobs:
   depchecktest:
     runs-on: ubuntu-latest
     name: depecheck_test
-    steps:
-      
-name: Checkout
-      uses: actions/checkout@v2
-name: Depcheck
+    steps:      
+- name: Checkout
+  uses: actions/checkout@v2
+- name: Depcheck
     uses: dependency-check/Dependency-Check_Action@main
     id: Depcheck
     with:
